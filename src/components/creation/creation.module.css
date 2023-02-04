@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    color: aliceblue;
+}
+
+.containerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.iconSpider {
+    position: absolute;
+    right: 20em;
+    top: -35px;
+}
+
+.iconSpider img {
+    width: 100px;
+    animation: spider 3s infinite;
+}
+
+@keyframes spider {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: antiquewhite;
+    border-radius: 50%;
+    animation: circleWhite 2s infinite;
+}
+
+@keyframes circleWhite {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
