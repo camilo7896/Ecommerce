@@ -32,20 +32,3 @@
         transform: translateY(30px);
     }
 }
-
-.circle {
-    width: 50px;
-    height: 50px;
-    background: antiquewhite;
-    border-radius: 50%;
-    animation: circleWhite 2s infinite;
-}
-
-@keyframes circleWhite {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(100px);
-    }
-}
