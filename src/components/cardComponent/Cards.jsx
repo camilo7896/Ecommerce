@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import ProductData from '../../data/products.json'
 import Styles from './cards.module.css'
+
 export default function Cards() {
   const [product, setProduct] = useState(ProductData)
   const [count, setCount] = useState(0)
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className={Styles.container}>
         {product.products.map((item) => {
           return (
-            <div>
-              <div className="card w-96 bg-base-100 shadow-xl m-6">
+            <div key={item.id} className={Styles.containerCard}>
+              <div className="card w-72 bg-base-100 shadow-xl m-6">
                 <figure className="px-10 pt-10">
                   <img src={item.image} alt="Shoes" className="rounded-xl" />
                 </figure>

@@ -4,42 +4,42 @@
       "id": 1,
       "name": "vino 1",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 2,
       "name": "vino 2",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 3,
       "name": "vino 3",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 4,
       "name": "vino 4",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 5,
       "name": "vino 5",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 6,
       "name": "vino 6",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor, atque odio recusandae eligendi magnam architecto totam illo sit aspernatur, eius temporibus, quisquam officiis? Consequuntur ad veniam fuga deleniti quam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     }
   ]
