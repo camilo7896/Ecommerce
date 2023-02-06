@@ -52,6 +52,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+            {/*
             <div className="dropdown dropdown-end ">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full bg-slate-600 p-1">
@@ -76,6 +77,7 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
+           */}
           </div>
         </div>
       </div>
