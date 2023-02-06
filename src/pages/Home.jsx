@@ -7,7 +7,7 @@ export function Home() {
   return (
     <div>
       <Navbar />
-      <Cards />
+
       <Footer />
     </div>
   )

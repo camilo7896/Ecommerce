@@ -1,4 +1,7 @@
 import React from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
+import Carrito from '../carrito/Carrito'
+import Cards from '../cardComponent/Cards'
 
 export default function Navbar() {
   return (
@@ -6,7 +9,9 @@ export default function Navbar() {
       <div>
         <div className="navbar bg-slate-900 text-white pr-6">
           <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">Logo</a>
+            <Link to={'/'} className="btn btn-ghost normal-case text-xl">
+              Logo
+            </Link>
           </div>
           <div>
             <input
@@ -45,9 +50,12 @@ export default function Navbar() {
                   <span className="font-bold text-lg">8 Items</span>
                   <span className="text-info">Subtotal: $999</span>
                   <div className="card-actions">
-                    <button className="btn btn-success btn-block">
-                      View cart
-                    </button>
+                    {/*link router */}
+                    <Link to={'carrito'}>
+                      <button className="btn btn-success btn-block">
+                        View cart
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -80,6 +88,10 @@ export default function Navbar() {
            */}
           </div>
         </div>
+        <Routes>
+          <Route path="carrito" element={<Carrito />} />
+          <Route path="/" element={<Cards />} />
+        </Routes>
       </div>
     </>
   )

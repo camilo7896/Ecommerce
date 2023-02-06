@@ -10,7 +10,7 @@ export default function Cards() {
       <div className={Styles.container}>
         {product.products.map((item) => {
           return (
-            <div className={Styles.containerCard}>
+            <div key={item.id} className={Styles.containerCard}>
               <div className="card w-72 bg-base-100 shadow-xl m-6">
                 <figure className="px-10 pt-10">
                   <img src={item.image} alt="Shoes" className="rounded-xl" />
