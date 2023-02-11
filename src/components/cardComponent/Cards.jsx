@@ -52,7 +52,7 @@ const onAddProduc =product=>{
                       +
                     </button>
                   </div>
-                  <div className="card-actions">
+                  <div className="card-actions flex aling-center">
                     <button className="btn btn-success" onClick={()=> onAddProduc(product)}>
                       agregar al carrito
                     </button>
