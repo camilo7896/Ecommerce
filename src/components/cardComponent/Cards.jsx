@@ -25,7 +25,7 @@ const onAddProduc =product=>{
         {dataProduct.products.map((product) => {
           return (
             <div key={product.id} className={Styles.containerCard}>
-              <div className="card w-72 bg-base-100 shadow-xl m-6">
+              <div className="card w-72 bg-base-100 shadow-xl m-6 justify-center">
                 <figure className="px-10 pt-10">
                   <img src={product.image} alt="Shoes" className="rounded-xl" />
                 </figure>
@@ -35,7 +35,7 @@ const onAddProduc =product=>{
                   </div>
                   <h2 className="card-title">{product.name}</h2>
                   <p>{product.description}</p>
-                  <div className="flex m-2 products-center">
+                  <div className="flex m-2 products-center justify-center">
                     <button
                       onClick={() => setCount(count - 1)}
                       className="m-5  btn btn-outline btn-secondary"
@@ -52,7 +52,7 @@ const onAddProduc =product=>{
                       +
                     </button>
                   </div>
-                  <div className="card-actions flex aling-center">
+                  <div className="card-actions flex justify-center aling-center">
                     <button className="btn btn-success" onClick={()=> onAddProduc(product)}>
                       agregar al carrito
                     </button>
