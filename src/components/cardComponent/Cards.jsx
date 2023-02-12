@@ -1,23 +1,19 @@
 import React, { useState } from 'react'
-import ProductData from '../../data/products.json'
+import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './cards.module.css'
 
 export default function Cards() {
 
-  {/**************  Estados  ***************/}
-{/*Estado de los productos */}
-  const [dataProduct, setDataProduct] = useState(ProductData)
-  {/**Estado del carrito**/}
-  const [allProduct, setAllproduct] = useState([])
-  {/*Estado del contador */}
-  const [count, setCount] = useState(0)
-  {/*Total de productos */}
-const [total, setTotal]=useState(0)
+  {/********************************** Contexto Global **********************************/}
+  const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  {/********************************** Fin Contexto Global **********************************/}
 
+{/************************************  Metodos  *****************************************/}
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
 }
-  console.log(allProduct, count)
+
+  {/************************************ Fin Metodos  *****************************************/}
   return (
     <>
       <div className={Styles.container}>

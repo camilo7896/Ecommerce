@@ -1,13 +1,18 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Carrito from '../carrito/Carrito'
-import Cards from '../cardComponent/Cards'
+import ProductHome from '../../pages/ProductHome'
+import { useGlobalContext } from '../../provider/DataProvider'
 
 export default function Navbar() {
+
+    {/********************************** Contexto Global **********************************/}
+  const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+
   return (
     <>
       <div>
-        <div className="navbar bg-slate-900 text-white pr-6">
+        <div className="navbar bg-slate-900 text-white pr-6 ">
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Logo
@@ -39,7 +44,7 @@ export default function Navbar() {
                       d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                     />
                   </svg>
-                  <span className="badge badge-sm indicator-item">0</span>
+                  <span className="badge badge-sm indicator-item">{allProduct.length}</span>
                 </div>
               </label>
               <div
@@ -47,8 +52,8 @@ export default function Navbar() {
                 className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
               >
                 <div className="card-body bg-slate-700 rounded-md">
-                  <span className="font-bold text-lg">8 Items</span>
-                  <span className="text-info">Subtotal: $999</span>
+                  <span className="font-bold text-lg">{allProduct.length} Productos</span>
+                  <span className="text-info">Subtotal: ${total}</span>
                   <div className="card-actions">
                     {/*link router */}
                     <Link to={'carrito'}>
@@ -90,7 +95,7 @@ export default function Navbar() {
         </div>
         <Routes>
           <Route path="carrito" element={<Carrito />} />
-          <Route path="/" element={<Cards />} />
+          <Route path="/" element={<ProductHome/>} />
         </Routes>
       </div>
     </>
