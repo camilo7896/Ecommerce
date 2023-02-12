@@ -3,8 +3,6 @@
  flex-wrap: wrap;
  align-items: center;
  justify-content: center;
-}
-.containerCard{
-    border: 2px solid red;
-  
+ padding-top: 4rem;
+ position: relative;
 }
