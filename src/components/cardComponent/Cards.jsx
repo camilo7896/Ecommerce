@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './cards.module.css'
+import Productslist from '../../data/products.json'
 
 export default function Cards() {
 
   {/********************************** Contexto Global **********************************/}
-  const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
   {/********************************** Fin Contexto Global **********************************/}
 
 {/************************************  Metodos  *****************************************/}
@@ -18,7 +19,7 @@ const onAddProduc =product=>{
     <>
       <div className={Styles.container}>
         {/* Recorrido de la data */}
-        {dataProduct.products.map((product) => {
+        {Productslist.products.map((product) => {
           return (
             <div key={product.id} className={Styles.containerCard}>
               <div className="card w-72 bg-base-100 shadow-xl m-6 justify-center">
@@ -32,7 +33,8 @@ const onAddProduc =product=>{
                   <h2 className="card-title">{product.name}</h2>
                   <p>{product.description}</p>
                   <div className="flex m-2 products-center justify-center">
-                    <button
+                   
+                   {/* <button
                       onClick={() => setCount(count - 1)}
                       className="m-5  btn btn-outline btn-secondary"
                     >
@@ -47,6 +49,7 @@ const onAddProduc =product=>{
                     >
                       +
                     </button>
+                    */}
                   </div>
                   <div className="card-actions flex justify-center aling-center">
                     <button className="btn btn-success" onClick={()=> onAddProduc(product)}>

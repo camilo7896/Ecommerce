@@ -1,8 +1,9 @@
 import React from 'react'
+import Styles from './home.module.css'
 
 export default function Footer() {
   return (
-    <div>
+    <div className={Styles.foot}>
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <div className="grid grid-flow-col gap-4">
           <a className="link link-hover"> About us </a>{' '}
