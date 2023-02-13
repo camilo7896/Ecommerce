@@ -1,12 +1,14 @@
 import React from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
+import Swal from 'sweetalert'
 
 export default function Carrito() {
    {/********************************** Contexto Global **********************************/}
    const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
-console.log('Carriton = ', allProduct )
-console.log('Total = ', total)
+   const sendList=()=>{
+    Swal("Genial!", "Se ha enviado tu producto")
+   }
 
   return (
     <>
@@ -14,9 +16,10 @@ console.log('Total = ', total)
     <div className='flex justify-center p-5 '>
     <h1 className='text-xl font-bold'>Realizar Compra</h1>
     </div>
+    
     {allProduct.map((item)=>{
       return (
-    <div key={item.id}>
+    <div>
     <div className="overflow-x-auto w-full">
   <table className="table w-full">
     {/* <!-- head --> */}
@@ -45,6 +48,8 @@ console.log('Total = ', total)
     </div>
   )
     })}
+
+    <button className="btn btn-block bg-success" onClick={sendList}>Enviar Pedido</button>
     </div>
     </>
   )

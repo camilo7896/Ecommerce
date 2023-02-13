@@ -22,7 +22,7 @@ export default function Navbar() {
             <input
               type="text"
               name="Submit"
-              placeholder="Search"
+              placeholder="Buscar"
               className="text-black p-1 rounded-md w-44 m-auto"
             />
           </div>
