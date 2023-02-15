@@ -14,10 +14,14 @@ import DataProduct from "../data/products.json"
   const [count, setCount] = useState(0)
   {/*Total de productos */}
 const [total, setTotal]=useState(0)
+  {/*Subotal de productos */}
+  const [subTotal, setSubTotal]=useState(0)
   {/*Buscador*/}
   const [search, setSearch]=useState("")
+
+  
 return(
-  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch}}>
+  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal, setSubTotal}}>
   {children}
   </GlobalContext.Provider>
 )
