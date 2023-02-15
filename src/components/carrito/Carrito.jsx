@@ -1,6 +1,8 @@
 import React from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Swal from 'sweetalert'
+import  Styles  from "./carrito.module.css";
+import ButonStore from './ButonStore';
 
 export default function Carrito() {
    {/********************************** Contexto Global **********************************/}
@@ -9,7 +11,7 @@ export default function Carrito() {
    const sendList=()=>{
     Swal("Genial!", "Se ha enviado tu producto")
 
-    let message = "https://wa.me/573132361040?text=" + " Han realizado un pedido de " + '*'+ allProduct.map((i)=>{return( i.name)}) +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
+    let message = "https://wa.me/573132361040?text=" + "Orden de "+  '*'+ allProduct.map((i)=>{return( i.name)}) +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
    window.location.href= message;
    }
    
@@ -17,10 +19,14 @@ export default function Carrito() {
   return (
     <>
     <div>
-
-    <h1>Total = $ {total}</h1>
+    <div className={Styles.containerTotal}>
+      <div className={Styles.total}>
+        <h1>Total = $ {total}</h1>
+      </div>
+</div>
     <div className='flex justify-center p-5 '>
-    <h1 className='text-xl font-bold'>Realizar Compra</h1>
+    {allProduct == "" ?  <h1 className='text-xl font-bold'>El carrito esta vacio</h1>:<h1 className='text-xl font-bold'>Tienes {allProduct.length} productos</h1>}
+
     </div>
     
     {allProduct.map((item)=>{
@@ -56,8 +62,14 @@ export default function Carrito() {
     </div>
   )
     })}
-   
+    {allProduct==""? "": 
+    <form>
+    <input type="text" placeholder="Nombre" required className="input input-bordered input-accent w-full max-w-xs" />
     <button className="btn btn-block bg-success" onClick={sendList}>Enviar Pedido</button>
+    </form>
+    }
+    
+    
    
     
     </div>
