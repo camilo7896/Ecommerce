@@ -11,7 +11,7 @@ export default function Carrito() {
    const sendList=()=>{
     Swal("Genial!", "Se ha enviado tu producto")
 
-    let message = "https://wa.me/573132361040?text=" + " Han realizado un pedido de%20 " + '*'+ allProduct.map((i)=>{return( i.name)}) +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
+    let message = "https://wa.me/573132361040?text=" + "Orden de "+  '*'+ allProduct.map((i)=>{return( i.name)}) +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
    window.location.href= message;
    }
    
