@@ -2,15 +2,16 @@
   "products": [
     {
       "id": 1,
-      "name": "vino 1",
+      "name": "El hombre bala",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 10000
     },
     {
       "id": 2,
-      "name": "vino 2",
+      "name": "Malafollá",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
@@ -23,21 +24,21 @@
     },
     {
       "id": 4,
-      "name": "vino 4",
+      "name": "Envidia cochina",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 5,
-      "name": "vino 5",
+      "name": "Blanco y en botella",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 6,
-      "name": "vino 6",
+      "name": "Loco",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000

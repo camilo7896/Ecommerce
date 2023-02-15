@@ -6,14 +6,17 @@ import Productslist from '../../data/products.json'
 export default function Cards() {
 
   {/********************************** Contexto Global **********************************/}
-  const {allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {allProduct,setAllproduct,total, setTotal, subTotal, setSubtotal } = useGlobalContext()
   {/********************************** Fin Contexto Global **********************************/}
 
 {/************************************  Metodos  *****************************************/}
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
+  setTotal(total + product.price)
+ setSubtotal(total)
+ 
 }
-
+// const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   {/************************************ Fin Metodos  *****************************************/}
   return (
     <>
@@ -24,7 +27,7 @@ const onAddProduc =product=>{
             <div key={product.id} className={Styles.containerCard}>
               <div className="card w-72 bg-base-100 shadow-xl m-6 justify-center">
                 <figure className="px-10 pt-10">
-                  <img src={product.image} alt="Shoes" className="rounded-xl" />
+                  <img src={product.image} alt="Shoes" className="rounded-xl w-28" />
                 </figure>
                 <div className="card-body products-center text-center">
                   <div className="justify-products-end">
@@ -52,7 +55,7 @@ const onAddProduc =product=>{
                     */}
                   </div>
                   <div className="card-actions flex justify-center aling-center">
-                    <button className="btn btn-success" onClick={()=> onAddProduc(product)}>
+                    <button className="btn btn-success" onClick={()=> onAddProduc(product, product.price)}>
                       agregar al carrito
                     </button>
                   </div>
