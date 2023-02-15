@@ -1,0 +1,13 @@
+.containerTotal{
+    display: flex;
+    justify-content: center;
+}
+.total{
+    background: #0F172A;
+    padding: 5px 10px;
+    border-radius: 0 0 15px 15px;
+}
+.total{
+    font-size: larger;
+    color: white;
+}

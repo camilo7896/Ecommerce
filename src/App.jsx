@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { Progress } from './components/creation/Progress'
+import "./App.css";
+import { Home } from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <Progress />
+      <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
