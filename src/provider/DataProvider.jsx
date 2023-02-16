@@ -19,9 +19,15 @@ const [total, setTotal]=useState(0)
   {/*Buscador*/}
   const [search, setSearch]=useState("")
 
+  const [data, setData] = useState([{
+    name:'',
+    cel:'',
+    address:''
+  }]);
+
   
 return(
-  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal, setSubTotal}}>
+  <GlobalContext.Provider value={{data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
   {children}
   </GlobalContext.Provider>
 )
