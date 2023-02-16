@@ -18,8 +18,8 @@ export default function Navbar() {
               Logo
             </Link>
           </div>
-          <div>
-           <span>$ {total}</span>
+          <div className='font-bold'>
+          {allProduct==''?"$ 0":<span>$ {total}</span>}
           </div>
           {/* <div>
             <input
@@ -60,8 +60,8 @@ export default function Navbar() {
                   <div className="card-actions">
                     {/*link router */}
                     <Link to={'carrito'}>
-                      <button className="btn btn-success btn-block">
-                        View cart
+                      <button className="btn btn-success btn-block font-bold">
+                        Ir a carrito
                       </button>
                     </Link>
                   </div>
