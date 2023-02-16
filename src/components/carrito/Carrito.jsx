@@ -1,20 +1,39 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Swal from 'sweetalert'
 import  Styles  from "./carrito.module.css";
-import ButonStore from './ButonStore';
+
 
 export default function Carrito() {
    {/********************************** Contexto Global **********************************/}
-   const {allProduct,setAllproduct, total} = useGlobalContext()
+   const {allProduct,setAllproduct, total, data, setData} = useGlobalContext()
+  const {name, cel,address}=data;
+
+  const handleName =(e)=>{
+    setData({
+      ...data,
+      [e.target.name]:e.target.value,
+      [e.target.cel]:e.target.value,
+      [e.target.address]:e.target.value
+    })
+  };
+
+
+  const sendData=(e)=>{
+    e.preventDefault();
+    console.log('nombres: ', e.target.value)
+   
+  }
 
    const sendList=()=>{
     Swal("Genial!", "Se ha enviado tu producto")
-
-    let message = "https://wa.me/573132361040?text=" + "Orden de "+  '*'+ allProduct.map((i)=>{return( i.name)}) +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
-   window.location.href= message;
+    let nameProduct = allProduct.map((i)=>{return( i.name)});
+    let nameClient = data.map((b)=>{return(b)});
+    let message = "https://wa.me/573132361040?text=" + "Orden de "+  '*'+ nameProduct +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
+    window.location.href= message;
    }
    
+   console.log(data)
 
   return (
     <>
@@ -32,8 +51,8 @@ export default function Carrito() {
     {allProduct.map((item)=>{
       return (
     <div>
-    <div className="overflow-x-auto w-full">
-  <table className="table w-full">
+    <div  className="overflow-x-auto w-full">
+  <table key={item.id} className="table w-full">
     {/* <!-- head --> */}
    
     <tbody>
@@ -64,12 +83,13 @@ export default function Carrito() {
     <hr/>
     <div className='mt-5 flex justify-center'>
     {allProduct==""? "": 
-    <form className='flex justify-center flex-col'>
+    <form className='flex justify-center flex-col' onSubmit={sendData}>
     <h2 className='text-center'>Datos de envio</h2>
-    <input type="text" placeholder="Nombre" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
-    <input type="text" placeholder="Celular" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
-    <input type="text" placeholder="Dirección" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
-    <button className="btn btn-block bg-success mt-10" onClick={sendList}>Enviar Pedido</button>
+    <input type="text" name='name' onChange={handleName} placeholder="Nombre" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+    <input type="text" name='cel' onChange={handleName} placeholder="Celular" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+    <input type="text" name='address' onChange={handleName} placeholder="Direccion" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+
+    <button type='submit' className="btn btn-block bg-success mt-10" onClick={sendList}>Enviar Pedido</button>
     </form>
     }
     </div> 

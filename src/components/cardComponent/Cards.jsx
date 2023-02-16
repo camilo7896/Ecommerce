@@ -6,14 +6,14 @@ import Productslist from '../../data/products.json'
 export default function Cards() {
 
   {/********************************** Contexto Global **********************************/}
-  const {allProduct,setAllproduct,total, setTotal, subTotal, setSubtotal } = useGlobalContext()
+  const {allProduct,setAllproduct,total, setTotal, subTotal } = useGlobalContext()
   {/********************************** Fin Contexto Global **********************************/}
 
 {/************************************  Metodos  *****************************************/}
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
   setTotal(total + product.price)
- setSubtotal(total)
+
  
 }
 // const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
