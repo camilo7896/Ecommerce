@@ -21,7 +21,7 @@ const [total, setTotal]=useState(0)
 
   
 return(
-  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal, setSubTotal}}>
+  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
   {children}
   </GlobalContext.Provider>
 )

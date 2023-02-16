@@ -57,21 +57,22 @@ export default function Carrito() {
 
     </tbody>
   </table>
-</div>
-
+    </div>
     </div>
   )
     })}
+    <hr/>
+    <div className='mt-5 flex justify-center'>
     {allProduct==""? "": 
-    <form>
-    <input type="text" placeholder="Nombre" required className="input input-bordered input-accent w-full max-w-xs" />
-    <button className="btn btn-block bg-success" onClick={sendList}>Enviar Pedido</button>
+    <form className='flex justify-center flex-col'>
+    <h2 className='text-center'>Datos de envio</h2>
+    <input type="text" placeholder="Nombre" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+    <input type="text" placeholder="Celular" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+    <input type="text" placeholder="Dirección" required className=" m-2 input input-bordered input-accent w-full max-w-xs" />
+    <button className="btn btn-block bg-success mt-10" onClick={sendList}>Enviar Pedido</button>
     </form>
     }
-    
-    
-   
-    
+    </div> 
     </div>
 
   
