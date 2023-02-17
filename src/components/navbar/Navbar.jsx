@@ -21,14 +21,7 @@ export default function Navbar() {
           <div className='font-bold'>
           {allProduct==''?"$ 0":<span>$ {total}</span>}
           </div>
-          {/* <div>
-            <input
-              type="text"
-              name="Submit"
-              placeholder="Buscar"
-              className="text-black p-1 rounded-md w-44 m-auto"
-            />
-          </div> */}
+     
           <div className="flex-none">
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle">
