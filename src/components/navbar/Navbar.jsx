@@ -9,6 +9,10 @@ export default function Navbar() {
     {/********************************** Contexto Global **********************************/}
   const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
+  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+
+
+
   return (
     <>
       <div>
@@ -17,9 +21,10 @@ export default function Navbar() {
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Logo
             </Link>
+        
           </div>
           <div className='font-bold'>
-          {allProduct==''?"$ 0":<span>$ {total}</span>}
+          {allProduct==''?"$ 0":<span>$ {valorFormateado}</span>}
           </div>
      
           <div className="flex-none">

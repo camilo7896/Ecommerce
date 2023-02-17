@@ -7,7 +7,7 @@ export default function Carrito() {
   {
     /********************************** Contexto Global **********************************/
   }
-  const { allProduct, setAllproduct, total, data, setData } =
+  const { allProduct, setAllproduct, total, data, setData,valorFormateado } =
     useGlobalContext();
   const { name, cel, address } = data;
 
@@ -79,6 +79,7 @@ export default function Carrito() {
         </div>
 
         {allProduct.map((item) => {
+          const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
           return (
             <div>
               <div className="overflow-x-auto w-full">
@@ -104,7 +105,7 @@ export default function Carrito() {
                       <td>
                         <p>{item.name}</p>
                       </td>
-                      <td>{item.price}</td>
+                      <td>{valorFormateado}</td>
                       {/* <td>No.{item.id}</td> */}
                     </tr>
                   </tbody>

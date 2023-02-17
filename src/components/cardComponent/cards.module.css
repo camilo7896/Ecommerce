@@ -6,3 +6,46 @@
  padding-top: 4rem;
 }
 
+.btn{
+    background-color: #0F172A;
+    color: white;
+    padding: 5px;
+    width: 40%;
+    border-radius: 15px;
+    animation-name: animationBtn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+    padding-bottom: 10px;
+}
+
+@keyframes animationBtn {
+    0% {
+        background: #0F172A;
+        box-shadow: 0 0 15px #00c72be1;
+      }
+      50% {
+        background: #00c72be1;
+        box-shadow: 0 0 15px #0F172A;
+       
+      }
+      100% {
+        background: #0F172A;
+        box-shadow: 0 0 15px #00c72be1;
+        
+      }
+    }
+    
+    .boton-animado:hover {
+      animation: animacion-boton 0.5s;
+    
+}
