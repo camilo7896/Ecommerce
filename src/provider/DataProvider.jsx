@@ -19,9 +19,15 @@ const [total, setTotal]=useState(0)
   {/*Buscador*/}
   const [search, setSearch]=useState("")
 
+  const [data, setData] = useState([{
+    name:'',
+    cel:'',
+    address:''
+  }]);
+  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
   
 return(
-  <GlobalContext.Provider value={{dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal, setSubTotal}}>
+  <GlobalContext.Provider value={{valorFormateado, data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
   {children}
   </GlobalContext.Provider>
 )

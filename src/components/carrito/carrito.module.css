@@ -1,6 +1,12 @@
+.container{
+    position: relative;
+    
+}
 .containerTotal{
     display: flex;
     justify-content: center;
+    position: fixed;
+    left: 120px;
 }
 .total{
     background: #0F172A;
@@ -10,4 +16,9 @@
 .total{
     font-size: larger;
     color: white;
+}
+.containerForm{
+    display: flex;
+    justify-content: center;
+    
 }

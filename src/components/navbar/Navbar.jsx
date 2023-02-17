@@ -9,23 +9,24 @@ export default function Navbar() {
     {/********************************** Contexto Global **********************************/}
   const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
+  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+
+
+
   return (
     <>
       <div>
-        <div className="navbar bg-slate-900 text-white pr-6 ">
+        <div className="navbar bg-slate-900 text-white pr-6">
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Logo
             </Link>
+        
           </div>
-          <div>
-            <input
-              type="text"
-              name="Submit"
-              placeholder="Buscar"
-              className="text-black p-1 rounded-md w-44 m-auto"
-            />
+          <div className='font-bold'>
+          {allProduct==''?"$ 0":<span>$ {valorFormateado}</span>}
           </div>
+     
           <div className="flex-none">
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -57,8 +58,8 @@ export default function Navbar() {
                   <div className="card-actions">
                     {/*link router */}
                     <Link to={'carrito'}>
-                      <button className="btn btn-success btn-block">
-                        View cart
+                      <button className="btn btn-success btn-block font-bold">
+                        Ir a carrito
                       </button>
                     </Link>
                   </div>

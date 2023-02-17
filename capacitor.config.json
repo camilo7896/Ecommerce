@@ -1,0 +1,6 @@
+{
+  "appId": "com.vinos.app",
+  "appName": "Vinos",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,13 @@
+.circleType{
+    border: 5px solid #37CDBE;
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0F172A;
+    color: white;
+    font-size: 13px;
+}
