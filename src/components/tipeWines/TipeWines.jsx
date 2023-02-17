@@ -9,7 +9,7 @@ export default function TipeWines() {
   return (
     <div>
     <h1 className='text-center mt-10 font-bold text-2xl'>Tipos de vinos</h1>
-    <div className='flex justify-center mt-6 space-x-3 flex-wrap'>
+    <div className='flex justify-center mt-6 space-x-5 flex-wrap'>
       <div className={Styles.circleType} onClick={tinto}> TINTO</div>
       <div className={Styles.circleType}> BLANCO</div>
       <div className={Styles.circleType}> ROSADO</div>
