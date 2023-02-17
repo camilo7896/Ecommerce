@@ -24,10 +24,10 @@ const [total, setTotal]=useState(0)
     cel:'',
     address:''
   }]);
-
+  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
   
 return(
-  <GlobalContext.Provider value={{data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
+  <GlobalContext.Provider value={{valorFormateado, data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
   {children}
   </GlobalContext.Provider>
 )

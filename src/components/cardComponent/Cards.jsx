@@ -5,18 +5,34 @@ import Productslist from '../../data/products.json'
 import Search from '../search/Search'
 import { UseSearchContext } from '../../provider/SearchProvider'
 import TipeWines from '../tipeWines/TipeWines'
+import Swal from "sweetalert";
 
 export default function Cards() {
 
   {/********************************** Contexto Global **********************************/}
-  const {allProduct,setAllproduct,total, setTotal, subTotal } = useGlobalContext()
+  const {valorFormateado, allProduct,setAllproduct,total, setTotal, subTotal } = useGlobalContext()
   {/********************************** Fin Contexto Global **********************************/}
-
+  const [mostrarComponente, setMostrarComponente] = useState(false);
 {/************************************  Metodos  *****************************************/}
+
+const alertProduct=()=>{
+  let windowAlert = Swal("Producto agregado al carrito");
+  setTimeout(() => {
+    windowAlert.style.display ='none'
+  }, 500);
+}
+
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
   setTotal(total + product.price)
+  alertProduct()
 }
+let viewbtn = "Ver tipos de vinos"
+let disguiseBtn = "Ocultar"
+
+const handleClick = () => {
+  setMostrarComponente(!mostrarComponente);
+};
 // const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   {/************************************ Fin Metodos  *****************************************/}
  
@@ -25,8 +41,13 @@ const onAddProduc =product=>{
   return (
     <>
     <Search/>
-    <TipeWines/>   
 
+    <div className={Styles.containerBtn}>
+      <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
+      {mostrarComponente && <Componente />}
+    </div>
+  
+    
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {
@@ -74,4 +95,8 @@ const onAddProduc =product=>{
       </div>
     </>
   )
+}
+function Componente() {
+  return <TipeWines/>   
+  ;
 }
