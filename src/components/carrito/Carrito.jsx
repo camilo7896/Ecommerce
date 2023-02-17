@@ -35,7 +35,13 @@ export default function Carrito() {
       "https://wa.me/573132361040?text=" +
       "Orden de " +
       "*" +
-      nameProduct +
+      nameProduct.length +
+      " "
+      +
+      "Productos "+
+      nameProduct+
+      " "
+      +
       "*" +
       " Por total de " +
       "$" +
