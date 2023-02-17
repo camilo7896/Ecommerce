@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './cards.module.css'
 import Productslist from '../../data/products.json'
+import Search from '../search/Search'
+import { UseSearchContext } from '../../provider/SearchProvider'
+import TipeWines from '../tipeWines/TipeWines'
 
 export default function Cards() {
 
@@ -13,19 +16,23 @@ export default function Cards() {
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
   setTotal(total + product.price)
-
- 
 }
 // const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   {/************************************ Fin Metodos  *****************************************/}
+ 
+
+
   return (
     <>
+    <Search/>
+    <TipeWines/>   
+
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {
           return (
             <div key={product.id} className={Styles.containerCard}>
-              <div className="card w-72 bg-base-100 shadow-xl m-6 justify-center">
+              <div className="card w-72 bg-base-100 shadow-xl m-6 mb-36 justify-center">
                 <figure className="px-10 pt-10">
                   <img src={product.image} alt="Shoes" className="rounded-xl w-28" />
                 </figure>

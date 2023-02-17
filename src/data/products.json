@@ -5,13 +5,14 @@
       "name": "El hombre bala",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "type":"Tinto",
       "price": 10000
     },
     {
       "id": 2,
       "name": "Malafollá",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-
+      "type":"tinto",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
@@ -19,6 +20,7 @@
       "id": 3,
       "name": "Gato negro",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "type":"tinto",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 90000
     },
@@ -26,6 +28,7 @@
       "id": 4,
       "name": "Envidia cochina",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "type":"espumoso",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
@@ -33,6 +36,7 @@
       "id": 5,
       "name": "Blanco y en botella",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "type":"roosado",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
@@ -40,6 +44,15 @@
       "id": 6,
       "name": "Loco",
       "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "type":"blanco",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price": 20000
+    },
+    {
+      "id": 7,
+      "name": "Envidia cochina",
+      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "type":"espumoso",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     }
