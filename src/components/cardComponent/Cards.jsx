@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './cards.module.css'
 import Productslist from '../../data/products.json'
+import Search from '../search/Search'
+import { UseSearchContext } from '../../provider/SearchProvider'
+import TipeWines from '../tipeWines/TipeWines'
 
 export default function Cards() {
 
@@ -20,6 +23,10 @@ const onAddProduc =product=>{
   {/************************************ Fin Metodos  *****************************************/}
   return (
     <>
+  
+    <Search/>
+    <TipeWines/>
+    
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {
