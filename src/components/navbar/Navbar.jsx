@@ -9,7 +9,7 @@ export default function Navbar() {
     {/********************************** Contexto Global **********************************/}
   const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
-  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+
 
 
 
