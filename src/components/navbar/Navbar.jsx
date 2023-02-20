@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="navbar bg-slate-900 text-white pr-6">
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
-              Logo
+              Le vin
             </Link>
         
           </div>
