@@ -1,0 +1,63 @@
+.subContainer{
+margin: 35px 20px 20px 20px;
+border-radius: 15px;
+background-color: rgba(240, 236, 236, 0.589);
+box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
+}
+.containerProduct{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;    
+}
+.containerImg img{
+    width: 200px;
+    border-radius: 10%;
+}
+.containerText{
+    padding-left: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    background-color: rgba(0, 0, 0, 0.788);
+    padding: 8px;
+    color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.containerBtns{
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.btnCategories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 25%;
+    height: 50px;
+    background-color: rgba(170, 173, 175, 0.315);
+    box-shadow:4px 3px 2px rgba(146, 146, 146, 0.589) ;
+
+}
+.containerNav{
+    background-color: #000000;
+    width: 100%;
+    height: 160px;
+    border-radius: 0 0 200px 0;
+}
+.containerBanne{
+    width: 50%;
+    position: absolute;
+    top: 10px;
+}
