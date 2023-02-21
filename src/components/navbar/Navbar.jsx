@@ -7,7 +7,7 @@ import { useGlobalContext } from '../../provider/DataProvider'
 export default function Navbar() {
 
     {/********************************** Contexto Global **********************************/}
-  const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
 
 
@@ -23,8 +23,9 @@ export default function Navbar() {
             </Link>
         
           </div>
+
           <div className='font-bold'>
-          {allProduct==''?"$ 0":<span>$ {valorFormateado}</span>}
+          {allProduct==''?"$ 0.000":<span>$ {valorFormateado}</span>}
           </div>
      
           <div className="flex-none">
@@ -71,7 +72,7 @@ export default function Navbar() {
         </div>
         <Routes>
           <Route path="carrito" element={<Carrito />} />
-          <Route path="/" element={<ProductHome/>} />
+          <Route path="/*" element={<ProductHome/>} />
         </Routes>
       </div>
     </>

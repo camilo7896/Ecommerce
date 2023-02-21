@@ -7,15 +7,16 @@ export default function TipeWines() {
         console.log('Clic en Vino tinto')
     }
   return (
-    <div>
-    <h1 className='text-center mt-10 font-bold text-2xl'>Tipos de vinos</h1>
-    <div className='flex justify-center mt-6 space-x-5 flex-wrap'>
-      <div className={Styles.circleType} onClick={tinto}> <button>TINTO</button></div>
-      <div className={Styles.circleType}> BLANCO</div>
-      <div className={Styles.circleType}> ROSADO</div>
-      <div className={Styles.circleType}> ESPUMOSO</div>
-      <div className={Styles.circleType}> GENEROSO</div>
-    </div>
-    </div>
+   <>
+    <div className="dropdown dropdown-hover">
+  <label tabIndex={0} className="bg-slate-400 btn m-1">Tipos de vinos</label>
+  <ul tabIndex={0} className="bg-slate-400 text-white dropdown-content menu p-2 shadow rounded-box w-52">
+    <li><a>Item 1</a></li>
+    <li><a>Item 2</a></li>
+    <li><a>Item 2</a></li>
+    <li><a>Item 2</a></li>
+  </ul>
+</div>
+   </>
   )
 }

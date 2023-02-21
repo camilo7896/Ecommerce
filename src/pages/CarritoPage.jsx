@@ -7,7 +7,7 @@ import Navbar from '../components/navbar/Navbar'
 export default function CarritoPage() {
   return (
     <div>
-    
+    <Navbar/>
       <Carrito/>
       <Footer/>
       <FooterMovile/>

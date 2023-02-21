@@ -19,6 +19,7 @@ export default function pageHome() {
   </div>
 
     {/* card del producto Promoción */}
+    <div className='flex justify-center'>
       <div className={Styles.subContainer}>
       <h2 className='font-bold'>Promoción del dia</h2>
           <div className={Styles.containerProduct}>
@@ -31,21 +32,22 @@ export default function pageHome() {
               </div>
           </div>
       </div>
+      </div>
       {/* Botones de categorias */}
       <div className={Styles.containerBtns}>
         <div className={Styles.btnCategories}>
-        <button>
-       <Link to={'/wine'}>
+        <Link to={'/wine'}>
+        <button className='cursor-pointer'>  
         <Icon  css={'icon'} icon={faWineGlass}/> <small>Vinos</small>
-        </Link>
         </button>
+        </Link>
         </div>
         <div className={Styles.btnCategories}>
-        <button>
         <Link to={'/beer'}>
+        <button className='cursor-pointer'>
         <Icon  css={'icon'} icon={faBeerMugEmpty}/> <small>Cervezas</small>
-        </Link>
         </button>
+        </Link>
         </div>
      
       </div>

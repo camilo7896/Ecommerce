@@ -38,6 +38,7 @@ box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
     
 }
 .btnCategories{
+    cursor: pointer;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -65,5 +66,17 @@ box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
 .containerBanne{
     width: 50%;
     position: absolute;
-    top: 10px;
+    top: 50px;
+}
+
+
+@media only screen and (min-width: 346px){
+.containerBanne{
+    width: 200px;
+    top: 15px;
+}	
+.subContainer{
+    width: 40%;
+    padding: 15px;
+}
 }
