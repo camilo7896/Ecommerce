@@ -9,14 +9,14 @@ export default function Navbar() {
     {/********************************** Contexto Global **********************************/}
   const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
-  const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+
 
 
 
   return (
     <>
       <div>
-        <div className="navbar bg-slate-900 text-white pr-6">
+        <div className="navbar bg-black text-white pr-6">
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Le vin
