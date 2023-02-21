@@ -1,6 +1,5 @@
 .container{
-    position: relative;
-    
+   margin-bottom: 10rem;   
 }
 .containerTotal{
     display: flex;
