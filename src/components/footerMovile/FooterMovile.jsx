@@ -14,7 +14,7 @@ export default function FooterMovile() {
       <div className='ml-3 mr-3'>
       <Icon css='icon' icon={faPhone}/>
       </div>
-      <div className='ml-3 mr-3'>
+      <div className='ml-3 mr-3 '>
       <Link to={"/"}>
       <Icon  css={'icon'} icon={faHouse}/>
       </Link>

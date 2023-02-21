@@ -5,7 +5,6 @@
 .containerTotal{
     display: flex;
     justify-content: center;
-    position: fixed;
     left: 120px;
 }
 .total{

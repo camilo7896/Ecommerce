@@ -24,7 +24,7 @@ const alertProduct=()=>{
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
   setTotal(total + product.price)
-  // alertProduct()
+   alertProduct()
 }
 let viewbtn = "Ver tipos de vinos"
 let disguiseBtn = "Ocultar"
@@ -42,8 +42,9 @@ const handleClick = () => {
     <Search/>
 
     <div className={Styles.containerBtn}>
-      <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
-      {mostrarComponente && <Componente />}
+      {/* <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
+      {mostrarComponente && <Componente />} */}
+      <TipeWines/>
     </div>
   
     
