@@ -5,6 +5,7 @@ export default function pageHome() {
     <div>
     <div></div>
       <h1>Home</h1>
+      <span>Hello</span>
     </div>
   )
 }
