@@ -1,7 +1,10 @@
 import React from 'react'
 import Styles from './wineStyle.module.css'
 import Icon from '../Icon'
+import Wines from '../../pages/Wines';
 import {faWineGlass, faBeerMugEmpty} from '@fortawesome/free-solid-svg-icons';
+import { Routes, Route, Link } from 'react-router-dom'
+
 
 
 export default function pageHome() {
@@ -29,10 +32,24 @@ export default function pageHome() {
       </div>
       {/* Botones de categorias */}
       <div className={Styles.containerBtns}>
-        <div className={Styles.btnCategories}><Icon  css={'icon'} icon={faWineGlass}/> <small>Vinos</small></div>
-        <div className={Styles.btnCategories}><Icon  css={'icon'} icon={faBeerMugEmpty}/> <small>Cervezas</small></div>
+        <div className={Styles.btnCategories}>
+        <button>
+       <Link to={'wine'}>
+        <Icon  css={'icon'} icon={faWineGlass}/> <small>Vinos</small>
+        </Link>
+        </button>
+        </div>
+        <div className={Styles.btnCategories}>
+        <button>
+        <Icon  css={'icon'} icon={faBeerMugEmpty}/> <small>Cervezas</small>
+        </button>
+        </div>
 
       </div>
+
+      <Routes>
+          <Route path="wine" element={<Wines />} />
+        </Routes>
     </div>
   )
 }
