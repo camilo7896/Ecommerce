@@ -3,7 +3,6 @@ import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './cards.module.css'
 import Productslist from '../../data/products.json'
 import Search from '../search/Search'
-import { UseSearchContext } from '../../provider/SearchProvider'
 import TipeWines from '../tipeWines/TipeWines'
 import Swal from "sweetalert";
 
@@ -25,7 +24,7 @@ const alertProduct=()=>{
 const onAddProduc =product=>{
   setAllproduct([...allProduct, product])
   setTotal(total + product.price)
-  alertProduct()
+   alertProduct()
 }
 let viewbtn = "Ver tipos de vinos"
 let disguiseBtn = "Ocultar"
@@ -43,8 +42,9 @@ const handleClick = () => {
     <Search/>
 
     <div className={Styles.containerBtn}>
-      <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
-      {mostrarComponente && <Componente />}
+      {/* <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
+      {mostrarComponente && <Componente />} */}
+      <TipeWines/>
     </div>
   
     
@@ -65,22 +65,6 @@ const handleClick = () => {
                   <p>{product.description}</p>
                   <div className="flex m-2 products-center justify-center">
                    
-                   {/* <button
-                      onClick={() => setCount(count - 1)}
-                      className="m-5  btn btn-outline btn-secondary"
-                    >
-                      -
-                    </button>
-                    <br />
-                    <span>{count}</span>
-                    <br />
-                    <button
-                      onClick={() => setCount(count + 1)}
-                      className="m-5 btn btn-outline btn-accent"
-                    >
-                      +
-                    </button>
-                    */}
                   </div>
                   <div className="card-actions flex justify-center aling-center">
                     <button className="btn btn-success" onClick={()=> onAddProduc(product, product.price)}>

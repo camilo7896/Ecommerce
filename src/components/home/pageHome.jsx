@@ -4,6 +4,7 @@ import Icon from '../Icon'
 import Wines from '../../pages/Wines';
 import {faWineGlass, faBeerMugEmpty} from '@fortawesome/free-solid-svg-icons';
 import { Routes, Route, Link } from 'react-router-dom'
+import Cards from '../cardComponent/Cards';
 
 
 
@@ -18,6 +19,7 @@ export default function pageHome() {
   </div>
 
     {/* card del producto Promoción */}
+    <div className='flex justify-center'>
       <div className={Styles.subContainer}>
       <h2 className='font-bold'>Promoción del dia</h2>
           <div className={Styles.containerProduct}>
@@ -30,26 +32,27 @@ export default function pageHome() {
               </div>
           </div>
       </div>
+      </div>
       {/* Botones de categorias */}
       <div className={Styles.containerBtns}>
         <div className={Styles.btnCategories}>
-        <button>
-       <Link to={'wine'}>
+        <Link to={'/wine'}>
+        <button className='cursor-pointer'>  
         <Icon  css={'icon'} icon={faWineGlass}/> <small>Vinos</small>
-        </Link>
         </button>
+        </Link>
         </div>
         <div className={Styles.btnCategories}>
-        <button>
+        <Link to={'/beer'}>
+        <button className='cursor-pointer'>
         <Icon  css={'icon'} icon={faBeerMugEmpty}/> <small>Cervezas</small>
         </button>
+        </Link>
         </div>
-
+     
       </div>
 
-      <Routes>
-          <Route path="wine" element={<Wines />} />
-        </Routes>
+     
     </div>
   )
 }
