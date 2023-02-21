@@ -20,14 +20,11 @@ export default function FooterMovile() {
       </Link>
       </div>
       <div className='ml-3 mr-3'>
-      <Link to={"carritoh"}>
+      <Link to={"/carrito"}>
       <Icon css='icon' icon={faShoppingBag}/>
       </Link>
       </div>
 </footer>
-   <Routes>
-          <Route path="carritoh" element={<Carrito/>} />
-        </Routes>
     </div>
   )
 }

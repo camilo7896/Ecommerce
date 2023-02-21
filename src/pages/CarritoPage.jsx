@@ -1,14 +1,14 @@
 import React from 'react'
-import Cards from '../components/cardComponent/Cards'
+import Carrito from '../components/carrito/Carrito'
 import Footer from '../components/footer/Footer'
 import FooterMovile from '../components/footerMovile/FooterMovile'
 import Navbar from '../components/navbar/Navbar'
 
-export default function Wines() {
+export default function CarritoPage() {
   return (
     <div>
-    <Navbar/>
-      <Cards/>
+    
+      <Carrito/>
       <Footer/>
       <FooterMovile/>
     </div>

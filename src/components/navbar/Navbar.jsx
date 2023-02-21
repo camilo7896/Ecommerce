@@ -66,32 +66,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            {/*
-            <div className="dropdown dropdown-end ">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full bg-slate-600 p-1">
-                  <img src="https://i.ibb.co/NFg7DcL/pngegg.png" />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="bg-slate-600 menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
-              >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
-            </div>
-           */}
+          
           </div>
         </div>
         <Routes>

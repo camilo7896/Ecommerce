@@ -1,14 +1,14 @@
 import React from 'react'
-import Cards from '../components/cardComponent/Cards'
+import Beer from '../components/beer/Beer'
 import Footer from '../components/footer/Footer'
 import FooterMovile from '../components/footerMovile/FooterMovile'
 import Navbar from '../components/navbar/Navbar'
 
-export default function Wines() {
+export default function BeerPage() {
   return (
     <div>
     <Navbar/>
-      <Cards/>
+      <Beer/>
       <Footer/>
       <FooterMovile/>
     </div>

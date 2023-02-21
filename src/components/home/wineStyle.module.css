@@ -38,6 +38,7 @@ box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
     
 }
 .btnCategories{
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +50,11 @@ box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
     background-color: rgba(170, 173, 175, 0.315);
     box-shadow:4px 3px 2px rgba(146, 146, 146, 0.589) ;
 
+}
+.btnCategories:hover{
+    color: wheat;
+    background-color: #292929;
+    box-shadow: 7px 5px 5px #e4c61e8c;
 }
 .containerNav{
     background-color: #000000;
