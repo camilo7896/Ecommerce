@@ -1,11 +1,9 @@
 .container{
-    position: relative;
-    
+   margin-bottom: 10rem;   
 }
 .containerTotal{
     display: flex;
     justify-content: center;
-    position: fixed;
     left: 120px;
 }
 .total{

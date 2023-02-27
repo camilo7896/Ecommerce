@@ -7,7 +7,7 @@ import { useGlobalContext } from '../../provider/DataProvider'
 export default function Navbar() {
 
     {/********************************** Contexto Global **********************************/}
-  const {dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
 
 
@@ -23,8 +23,9 @@ export default function Navbar() {
             </Link>
         
           </div>
+
           <div className='font-bold'>
-          {allProduct==''?"$ 0":<span>$ {valorFormateado}</span>}
+          {allProduct==''?"$ 0.000":<span>$ {valorFormateado}</span>}
           </div>
      
           <div className="flex-none">
@@ -66,37 +67,12 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            {/*
-            <div className="dropdown dropdown-end ">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full bg-slate-600 p-1">
-                  <img src="https://i.ibb.co/NFg7DcL/pngegg.png" />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="bg-slate-600 menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
-              >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
-            </div>
-           */}
+          
           </div>
         </div>
         <Routes>
           <Route path="carrito" element={<Carrito />} />
-          <Route path="/" element={<ProductHome/>} />
+          <Route path="/*" element={<ProductHome/>} />
         </Routes>
       </div>
     </>

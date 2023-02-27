@@ -2,57 +2,73 @@
   "products": [
     {
       "id": 1,
-      "name": "El hombre bala",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
+      "name": "Anna Codorniu Blanc de Blancs",
+      "image": "https://i.ibb.co/p0wc8pg/ANNA.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "type":"Tinto",
-      "price": 10000
+      "type":"Vino",
+      "price": 221800
     },
     {
       "id": 2,
-      "name": "Malafollá",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"tinto",
+      "name": "norton coleccion torrontes 2021 argentina",
+      "image": "https://i.ibb.co/fk3BfPh/Norton.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "price": 20000
+      "price": 43700
     },
     {
       "id": 3,
-      "name": "Gato negro",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"tinto",
+      "name": "Tio Pepe",
+      "image": "https://i.ibb.co/2N0f8c5/tioPepe.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 90000
     },
     {
       "id": 4,
-      "name": "Envidia cochina",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"espumoso",
+      "name": "OPORTO CRUZ Tawny",
+      "image": "https://i.ibb.co/ZHJ6Qhy/porto-Cruz.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 5,
-      "name": "Blanco y en botella",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"roosado",
+      "name": "ALIWEN UNDURRAGA CHARDONNAY",
+      "image": "https://i.ibb.co/bbyg9m8/aliwen.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 6,
-      "name": "Loco",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"blanco",
+      "name": "Vino Blanco Norton Cosecha Tardía 750 Ml.",
+      "image": "https://i.ibb.co/6yFyJcd/Cosecha-tardia.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     },
     {
       "id": 7,
-      "name": "Envidia cochina",
-      "image": "https://www.pngall.com/wp-content/uploads/2016/03/Wine-Free-PNG-Image.png",
-      "type":"espumoso",
+      "name": "ANNA CODORNIU ROSE",
+      "image": "https://i.ibb.co/RbPYC1g/Anna-rose.png",
+      "type":"Vino",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price": 20000
+    },
+    {
+      "id": 7,
+      "name": "NORTON RESERVA MERLOT 2019",
+      "image": "https://i.ibb.co/Fx4qJBB/photo-2023-02-26-22-19-31.jpg",
+      "type":"Vino",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price": 20000
+    },
+    {
+      "id": 7,
+      "name": "TORRELONGARES ROSADO TEMPRANILLO",
+      "image": "https://i.ibb.co/GdL1dLD/TLG.png",
+      "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
     }

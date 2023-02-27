@@ -65,9 +65,7 @@ export default function Carrito() {
             {total == 0 ? "" : <h1>Total = $ {total}</h1>}
           </div>
         </div> */}
-        <div className="flex justify-center mt-3">
-        {allProduct==""?"": <button  onClick={deleteData} className="btn btn-outline btn-error">Vaciar Carrito</button>}
-        </div>
+      
         <div className="flex justify-center p-5 ">
           {allProduct == "" ? (
             <h1 className="text-xl font-bold">El carrito esta vacio</h1>
@@ -76,8 +74,27 @@ export default function Carrito() {
               Tienes {allProduct.length} productos
             </h1>
           )}
+         
         </div>
-
+        <div className="text-center font-bold"><h2>Total: {valorFormateado}</h2></div>
+        <div className="flex  flex-row justify-center items-center">
+        <div className=" ">
+          {allProduct == "" ? (
+            ""
+          ) : (
+            <button
+              type="submit"
+              className="btn bg-success w-20 m-5"
+              onClick={sendList}
+            >
+              Enviar Pedido
+            </button>
+          )}
+        </div>
+        <div className="">
+        {allProduct==""?"": <button  onClick={deleteData} className="btn btn-outline w-20 m-5 btn-error">Vaciar Carrito</button>}
+        </div>
+        </div>
         {allProduct.map((item) => {
           const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
           return (
@@ -117,19 +134,7 @@ export default function Carrito() {
       
       </div>
       <hr />
-        <div className="mt-5 flex justify-center fixed bottom-20 left-32">
-          {allProduct == "" ? (
-            ""
-          ) : (
-            <button
-              type="submit"
-              className="btn btn-block bg-success mt-10"
-              onClick={sendList}
-            >
-              Enviar Pedido
-            </button>
-          )}
-        </div>
+    
     </>
   );
 }
