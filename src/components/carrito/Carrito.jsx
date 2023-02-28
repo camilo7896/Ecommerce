@@ -11,6 +11,10 @@ export default function Carrito() {
     useGlobalContext();
   const { name, cel, address } = data;
 
+  const clean =(e)=>{
+    console.log('clean', e)
+  }
+
   const handleName = (e) => {
     setData({
       ...data,
@@ -76,7 +80,7 @@ export default function Carrito() {
           )}
          
         </div>
-        <div className="text-center font-bold"><h2>Total: {valorFormateado}</h2></div>
+        <div className="text-center font-bold">{allProduct.length==" "?" ":<h2>Total: {valorFormateado}</h2>} </div>
         <div className="flex  flex-row justify-center items-center">
         <div className=" ">
           {allProduct == "" ? (
@@ -97,6 +101,7 @@ export default function Carrito() {
         </div>
         {allProduct.map((item) => {
           const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+          {}
           return (
             <div>
               <div className="overflow-x-auto w-full">
@@ -119,11 +124,14 @@ export default function Carrito() {
                           </div>
                         </div>
                       </td>
+                      <div className="h-14">
                       <td>
                         <p>{item.name}</p>
                       </td>
+                      </div>
+                      <div className="flex justify-end">
                       <td>{valorFormateado}</td>
-                      {/* <td>No.{item.id}</td> */}
+                      </div>
                     </tr>
                   </tbody>
                 </table>

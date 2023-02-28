@@ -4,19 +4,16 @@ import Icon from '../Icon'
 import Wines from '../../pages/Wines';
 import {faWineGlass, faBeerMugEmpty} from '@fortawesome/free-solid-svg-icons';
 import { Routes, Route, Link } from 'react-router-dom'
+import Contact from '../contact/Contact';
 
 
 
 export default function pageHome() {
   return (
     <div>
-    <div className={Styles.containerNav}>
-
+    <div className='flex justify-center m-5'>
+    <Contact/>
     </div>
-  <div className={Styles.containerBanne}>
-  <img src='https://i.ibb.co/XpgJvXK/wine.png' alt=' wine'/>
-  </div>
-
     {/* card del producto Promoción */}
       <div className={Styles.subContainer}>
       <h2 className='font-bold'>Promoción del dia</h2>
