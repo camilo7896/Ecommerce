@@ -10,7 +10,9 @@ import { router } from "./routes/Route";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <DataContext>
+  <div>
   <RouterProvider router={router}/>
+  </div>
   </DataContext>
 );
 

@@ -35,14 +35,9 @@ const handleClick = () => {
 // const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   {/************************************ Fin Metodos  *****************************************/}
  
-
-
   return (
     <>
     <Search/>
-
-
-    
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {

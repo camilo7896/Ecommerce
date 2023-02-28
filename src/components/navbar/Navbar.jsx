@@ -58,7 +58,7 @@ export default function Navbar() {
                   <span className="text-info">Subtotal: ${total}</span>
                   <div className="card-actions">
                     {/*link router */}
-                    <Link to={'carrito'}>
+                    <Link to={'/carrito'}>
                       <button className="btn btn-success btn-block font-bold">
                         Ir a carrito
                       </button>
@@ -71,8 +71,8 @@ export default function Navbar() {
           </div>
         </div>
         <Routes>
-          <Route path="carrito" element={<Carrito />} />
-          <Route path="/*" element={<ProductHome/>} />
+          <Route path="/carrito" element={<Carrito />} />
+          <Route path="/" element={<ProductHome/>} />
         </Routes>
       </div>
     </>
