@@ -7,7 +7,7 @@ import DataProduct from "../data/products.json"
 
   const DataContext = ({children}) =>{
     {/*Estado de los productos */}
-  const [dataProduct, setDataProduct] = useState([]);
+  const [dataProduct, setDataProduct] = useState([DataProduct]);
     {/**Estado del carrito**/}
     const [allProduct, setAllproduct] = useState([]) 
   {/*Estado del contador */}
@@ -17,7 +17,7 @@ const [total, setTotal]=useState(0)
   {/*Subotal de productos */}
   const [subTotal, setSubTotal]=useState(0)
   {/*Buscador*/}
-  const [search, setSearch]=useState("")
+  const [search, setSearch] = useState('');
 
   const [data, setData] = useState([{
     name:'',
@@ -27,7 +27,7 @@ const [total, setTotal]=useState(0)
   const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
   
 return(
-  <GlobalContext.Provider value={{valorFormateado, data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, search, setSearch, subTotal}}>
+  <GlobalContext.Provider value={{search,setSearch,valorFormateado, data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, subTotal}}>
   {children}
   </GlobalContext.Provider>
 )

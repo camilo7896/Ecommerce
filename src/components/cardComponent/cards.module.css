@@ -3,8 +3,8 @@
  flex-wrap: wrap;
  align-items: center;
  justify-content: center;
- padding-top: 4rem;
-
+ padding-top: 3rem;
+ margin-top: 15px;
 }
 .imgCard{
   width: 400px;
@@ -21,7 +21,9 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
+.containerCard{
+  color: black;
+}
 .containerBtn{
     display: flex;
     justify-content: center;

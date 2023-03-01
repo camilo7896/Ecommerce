@@ -26,8 +26,7 @@ const onAddProduc =product=>{
   setTotal(total + product.price)
    alertProduct()
 }
-let viewbtn = "Ver tipos de vinos"
-let disguiseBtn = "Ocultar"
+
 
 const handleClick = () => {
   setMostrarComponente(!mostrarComponente);
@@ -54,9 +53,9 @@ const handleClick = () => {
                   <div className='h-20 flex justify-center'>
                   <h2 className="card-title">{product.name}</h2>
                   </div>
-                  <div className='h-90'>
+                  {/* <div className='h-90'>
                   <p>{product.description}</p>
-                  </div>
+                  </div> */}
                   <div className="flex m-2 products-center justify-center">
                    
                   </div>
