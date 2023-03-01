@@ -10,7 +10,7 @@ import Carrito from '../carrito/Carrito';
 export default function FooterMovile() {
   return (
     <div className={Styles.footMovile}>
-      <footer className="footer items-center space-x-16 p-7 bg-black text-white pr-6 fixed bottom-0 flex justify-center">
+      <footer className={Styles.subFooterMobile}>
       <div className='ml-3 mr-3'>
       <Icon css='icon' icon={faPhone}/>
       </div>

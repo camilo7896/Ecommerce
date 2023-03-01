@@ -1,6 +1,5 @@
-.subFooterMobile{
-    position: fixed;
-    bottom: -1px;
+.containerNabvar{
+  
     background: rgb(78,6,6);
 background: radial-gradient(circle, rgba(78,6,6,1) 0%, rgba(0,0,0,1) 59%);
     width: 100%;
@@ -8,9 +7,4 @@ background: radial-gradient(circle, rgba(78,6,6,1) 0%, rgba(0,0,0,1) 59%);
     justify-content: space-around;
     color: white;
     padding: 20px;
-}
-@media only screen and (min-width: 900px){
-    .footMovile{
-        display: none;
-    }
 }

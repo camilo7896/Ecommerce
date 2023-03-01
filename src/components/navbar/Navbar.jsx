@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Carrito from '../carrito/Carrito'
 import ProductHome from '../../pages/ProductHome'
 import { useGlobalContext } from '../../provider/DataProvider'
+import Styles from './Styles.module.css'
 
 export default function Navbar() {
 
@@ -16,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <div className="navbar bg-black text-white pr-6">
+        <div className={Styles.containerNabvar}>
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Le vin

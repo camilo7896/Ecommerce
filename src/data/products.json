@@ -127,6 +127,23 @@
       "type":"Vino",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 20000
-    }
+    },
+     {
+            "id": 1,
+      "name": "BAVARIA 8.6 EXTREME",
+      "image": "https://i.ibb.co/4WX7js0/extreme.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "type":"berr",
+      "price": 0
+        },
+        {
+               "id": 1,
+         "name": "CORONA TROPICAL X 6",
+         "image": "https://i.ibb.co/48X7GmZ/tropical.png",
+         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+         "type":"berr",
+         "price": 0
+           }
   ]
 }
+
