@@ -49,7 +49,7 @@ const handleClick = () => {
                 </figure>
                 <div className="card-body products-center text-center">
                   <div className="justify-products-end">
-                    <span>$ {product.price}</span>
+                    <span>$ {product.priceString}</span>
                   </div>
                   <div className='h-20 flex justify-center'>
                   <h2 className="card-title">{product.name}</h2>

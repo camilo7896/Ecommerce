@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./wineStyle.module.css";
 import Icon from "../Icon";
 import Wines from "../../pages/Wines";
-import { faWineGlass, faBeerMugEmpty } from "@fortawesome/free-solid-svg-icons";
+import { faWineGlass, faBeerMugEmpty, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Routes, Route, Link } from "react-router-dom";
 import Contact from "../contact/Contact";
 import Beer from "../beer/Beer";
@@ -16,7 +16,8 @@ export default function pageHome() {
       </div>
       {/* card del producto Promoción */}
       <div className={Styles.subContainer}>
-        <h2 className="font-bold">Promoción del dia</h2>
+
+        <h2 className="font-bold">Contacto</h2>
         <div className={Styles.containerProduct}>
           <div className={Styles.containerImg}>
             <img
@@ -25,8 +26,10 @@ export default function pageHome() {
             />
           </div>
           <div className={Styles.containerText}>
-            <h2 className="font-semibold">Promoción del dia</h2>
-            <h4 className="font-semibold">$ 50.000</h4>
+          <Icon css={"icon"} icon={faPhone} />{" "}
+            <h2 className="font-semibold">+57 3012051987</h2>
+            <span>Centro comercial Parque Solano</span>
+            <small>Duitama-Boyacá</small>
           </div>
         </div>
       </div>
