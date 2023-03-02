@@ -6,7 +6,9 @@ background-color: rgba(240, 236, 236, 0.589);
 box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
 margin-bottom: 15px;
 padding: 5px;
-border: 2px solid rgba(255, 0, 0, 0.247);
+background: rgb(78,6,6);
+background: radial-gradient(circle, rgba(78,6,6,1) 0%, rgba(0,0,0,1) 59%);
+color: white;
 }
 .containerProduct{
     padding: 10px;

@@ -2,6 +2,8 @@
   width: 100%;
   position: relative;
   padding: 3px;
+  border-bottom: 1px solid #4e0404b4 ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .module {
