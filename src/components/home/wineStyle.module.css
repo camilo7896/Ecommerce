@@ -4,6 +4,9 @@ margin: 35px 20px 20px 20px;
 border-radius: 15px;
 background-color: rgba(240, 236, 236, 0.589);
 box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
+margin-bottom: 15px;
+padding: 5px;
+border: 2px solid rgba(255, 0, 0, 0.247);
 }
 .containerProduct{
     padding: 10px;
@@ -36,7 +39,7 @@ box-shadow:10px 8px 3px rgba(146, 146, 146, 0.247) ;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+    margin-bottom: 40px;
 }
 .btnCategories{
     cursor: pointer;
