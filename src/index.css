@@ -2,28 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-    color: white;
-    background: linear-gradient(219deg, #3c0000, #000000, #020314);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 14s ease infinite;
-    -moz-animation: AnimationName 14s ease infinite;
-    animation: AnimationName 14s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
-}

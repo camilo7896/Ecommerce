@@ -11,7 +11,6 @@ import Corousel from '../carousel/Carousel'
 export default function pageHome() {
   return (
     <div className={Styles.container}>
-    <Corousel/>
       <div className="flex justify-center p-5">
         <Contact />
       </div>

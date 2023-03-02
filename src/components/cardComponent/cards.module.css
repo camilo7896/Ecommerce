@@ -24,6 +24,14 @@
 .containerCard{
   color: black;
 }
+.btnAdd{
+  
+  background: rgb(29,115,0);
+background: linear-gradient(90deg, rgba(29,115,0,0.9164040616246498) 15%, rgba(21,153,37,1) 53%, rgba(8,128,4,0.927608543417367) 93%);
+  color: white;
+  padding: 15px;
+  border-radius: 15px ;
+}
 .containerBtn{
     display: flex;
     justify-content: center;
