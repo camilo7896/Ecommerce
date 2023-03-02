@@ -40,6 +40,7 @@ const handleClick = () => {
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {
+          
           return (
             <div key={product.id} className={Styles.containerCard}>
               <div className="card w-72  bg-base-100 shadow-xl m-6 mb-36 justify-center">
@@ -60,7 +61,7 @@ const handleClick = () => {
                    
                   </div>
                   <div className="card-actions flex justify-center aling-center">
-                    <button className="btn btn-success" onClick={()=> onAddProduc(product, product.price)}>
+                    <button className={Styles.btnAdd} onClick={()=> onAddProduc(product, product.price)}>
                       agregar al carrito
                     </button>
                   </div>

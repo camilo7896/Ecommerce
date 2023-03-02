@@ -8,7 +8,6 @@ export default function BeerPage() {
   return (
     <div>
     <Navbar/>
-      <Beer/>
       <Footer/>
       <FooterMovile/>
     </div>

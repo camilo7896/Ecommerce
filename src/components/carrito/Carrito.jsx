@@ -80,7 +80,9 @@ export default function Carrito() {
           )}
          
         </div>
-        <div className="text-center font-bold">{allProduct.length==" "?" ":<h2>Total: {valorFormateado}</h2>} </div>
+        <div className="flex justify-center">
+        <div className={Styles.contTotal}>{allProduct.length==" "?" ":<h2>Total: {valorFormateado}</h2>} </div>
+        </div>
         <div className="flex  flex-row justify-center items-center">
         <div className=" ">
           {allProduct == "" ? (
@@ -103,8 +105,8 @@ export default function Carrito() {
           const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
           {}
           return (
-            <div>
-              <div className="overflow-x-auto w-full">
+            <div className={Styles.containerTable}>
+              <div className={Styles.tabContainer}>
                 <table key={item.id} className="table w-full">
                   {/* <!-- head --> */}
 

@@ -4,6 +4,7 @@ import Carrito from '../carrito/Carrito'
 import ProductHome from '../../pages/ProductHome'
 import { useGlobalContext } from '../../provider/DataProvider'
 import Styles from './Styles.module.css'
+import { Home } from '../../pages/Home'
 
 export default function Navbar() {
 
@@ -73,7 +74,7 @@ export default function Navbar() {
         </div>
         <Routes>
           <Route path="/carrito" element={<Carrito />} />
-          <Route path="/" element={<ProductHome/>} />
+           {/* <Route path="/" element={<ProductHome/>} />   */}
         </Routes>
       </div>
     </>
