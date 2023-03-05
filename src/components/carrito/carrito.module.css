@@ -1,28 +1,30 @@
-.container{
-   margin-bottom: 10rem;   
+.container {
+    margin-bottom: 10rem;
 }
 
-.containerTotal{
+.containerTotal {
     display: flex;
     justify-content: center;
     left: 120px;
 }
-.total{
+
+.total {
     background: #0F172A;
     padding: 5px 10px;
     border-radius: 0 0 15px 15px;
 }
-.total{
+
+.total {
     font-size: larger;
     color: white;
 }
-.containerForm{
+
+.containerForm {
     display: flex;
     justify-content: center;
-    
 }
 
-.contTotal{
+.contTotal {
     max-width: 250px;
     padding: 1rem;
     color: rgb(0, 0, 0);
@@ -30,34 +32,38 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-width: 3px;
     border-style: solid;
-    border-image: 
-      linear-gradient(
-        to top, 
-        rgb(45, 235, 8), 
-        rgba(3, 3, 3, 0.637)
-      ) 4 100%;
+    border-image: linear-gradient( to top, rgb(45, 235, 8), rgba(3, 3, 3, 0.637)) 4 100%;
 }
 
-.tabContainer{
-    box-shadow: 2px 4px 5px 1px rgba(56, 55, 55, 0.534); /* All the borders by using the spread properties */
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.tabContainer {
+    box-shadow: 2px 4px 5px 1px rgba(56, 55, 55, 0.534);
+    /* All the borders by using the spread properties */
     width: 100%;
     margin-top: 7px;
     border-radius: 10px;
 }
-@media only screen and (min-width: 900px){
-    .containerTable{
+
+@media only screen and (min-width: 900px) {
+    .containerTable {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 20px;
         font-weight: bolder;
     }
-
-    .tabContainer{
-        box-shadow: 2px 4px 5px 1px rgba(80, 80, 80, 0.534); /* All the borders by using the spread properties */
+    .tabContainer {
+        box-shadow: 2px 4px 5px 1px rgba(80, 80, 80, 0.534);
+        /* All the borders by using the spread properties */
         width: 60%;
         margin-top: 7px;
         border-radius: 10px;
     }
-
 }

@@ -1,158 +1,156 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Anna Codorniu Blanc de Blancs",
-      "image": "https://i.ibb.co/p0wc8pg/ANNA.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "type":"Vino",
-      "priceString":"95.000",
-      "price": 95000
-    },
-    {
-      "id": 2,
-      "name": "norton coleccion torrontes 2021 argentina",
-      "image": "https://i.ibb.co/fk3BfPh/Norton.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"69.000",
-      "price": 69000
-    },
-    {
-      "id": 3,
-      "name": "Tio Pepe",
-      "image": "https://i.ibb.co/2N0f8c5/tioPepe.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"119.000",
-      "price": 119000
-    },
-    {
-      "id": 4,
-      "name": "OPORTO CRUZ Tawny",
-      "image": "https://i.ibb.co/ZHJ6Qhy/porto-Cruz.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"98.500",
-      "price": 98500
-    },
-    {
-      "id": 5,
-      "name": "ALIWEN UNDURRAGA CHARDONNAY",
-      "image": "https://i.ibb.co/bbyg9m8/aliwen.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"98.000",
-      "price": 98000
-    },
-    {
-      "id": 6,
-      "name": "Vino Blanco Norton Cosecha Tardía 750 Ml.",
-      "image": "https://i.ibb.co/6yFyJcd/Cosecha-tardia.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"57.000",
-      "price": 57000
-    },
-    {
-      "id": 7,
-      "name": "ANNA CODORNIU ROSE",
-      "image": "https://i.ibb.co/RbPYC1g/Anna-rose.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"129.000",
-      "price":129000
-    },
-    {
-      "id": 8,
-      "name": "NORTON RESERVA MERLOT 2019",
-      "image": "https://i.ibb.co/Fx4qJBB/photo-2023-02-26-22-19-31.jpg",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"48.000",
-      "price": 48000
-    },
-    {
-      "id": 9,
-      "name": "TORRELONGARES ROSADO TEMPRANILLO",
-      "image": "https://i.ibb.co/GdL1dLD/TLG.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"49.000",
-      "price": 49000
-    },
-    {
-      "id": 10,
-      "name": "CASILLERO DEL DIABLO SHIRAZ",
-      "image": "https://i.ibb.co/3NtdFv7/casillero-del-diablo-shiraz.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"57.000",
-      "price": 57000
-    },
-    {
-      "id": 11,
-      "name": "CASILLERO DEL DIABLO MALBEC",
-      "image": "https://i.ibb.co/0mf4bwg/malbec.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"79.000",
-      "price": 79000
-    },
-    {
-      "id": 12,
-      "name": "CASILLERO DEL DIABLO RED BLEND",
-      "image": "https://i.ibb.co/qR1jHLn/red-blend.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"79.000",
-      "price": 79000
-    },
-    {
-      "id": 13,
-      "name": "CASILLERO DEL DIABLO RED BLEND",
-      "image": "https://i.ibb.co/qR1jHLn/red-blend.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"79.000",
-      "price": 79000
-    },
-    {
-      "id": 14,
-      "name": "CASILLERO DEL DIABLO MERLOT",
-      "image": "https://i.ibb.co/RcSmpnv/c-MERLOT.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"95.000",
-      "price": 95000
-    },
-    {
-      "id": 16,
-      "name": "CASILLERO DEL DIABLO CARMENERE",
-      "image": "https://i.ibb.co/djvTZJX/CARMENERE.png",
-      "type":"Vino",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "priceString":"69.000",
-      "price": 69000
-    },
-     {
+    "products": [{
             "id": 1,
-      "name": "BAVARIA 8.6 EXTREME",
-      "image": "https://i.ibb.co/4WX7js0/extreme.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "type":"berr",
-      "priceString":"8.500",
-      "price": 8500
+            "name": "Anna Codorniu Blanc de Blancs",
+            "image": "https://i.ibb.co/p0wc8pg/ANNA.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "type": "Vino",
+            "priceString": "95.000",
+            "price": 95000
         },
         {
-               "id": 1,
-         "name": "CORONA TROPICAL X 6",
-         "image": "https://i.ibb.co/48X7GmZ/tropical.png",
-         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-         "type":"berr",
-         "priceString":"35.000",
-         "price": 35000
-           }
-  ]
+            "id": 2,
+            "name": "norton coleccion torrontes 2021 argentina",
+            "image": "https://i.ibb.co/fk3BfPh/Norton.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "69.000",
+            "price": 69000
+        },
+        {
+            "id": 3,
+            "name": "Tio Pepe",
+            "image": "https://i.ibb.co/2N0f8c5/tioPepe.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "119.000",
+            "price": 119000
+        },
+        {
+            "id": 4,
+            "name": "OPORTO CRUZ Tawny",
+            "image": "https://i.ibb.co/ZHJ6Qhy/porto-Cruz.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "98.500",
+            "price": 98500
+        },
+        {
+            "id": 5,
+            "name": "ALIWEN UNDURRAGA CHARDONNAY",
+            "image": "https://i.ibb.co/bbyg9m8/aliwen.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "98.000",
+            "price": 98000
+        },
+        {
+            "id": 6,
+            "name": "Vino Blanco Norton Cosecha Tardía 750 Ml.",
+            "image": "https://i.ibb.co/6yFyJcd/Cosecha-tardia.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "57.000",
+            "price": 57000
+        },
+        {
+            "id": 7,
+            "name": "ANNA CODORNIU ROSE",
+            "image": "https://i.ibb.co/RbPYC1g/Anna-rose.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "129.000",
+            "price": 129000
+        },
+        {
+            "id": 8,
+            "name": "NORTON RESERVA MERLOT 2019",
+            "image": "https://i.ibb.co/Fx4qJBB/photo-2023-02-26-22-19-31.jpg",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "48.000",
+            "price": 48000
+        },
+        {
+            "id": 9,
+            "name": "TORRELONGARES ROSADO TEMPRANILLO",
+            "image": "https://i.ibb.co/GdL1dLD/TLG.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "49.000",
+            "price": 49000
+        },
+        {
+            "id": 10,
+            "name": "CASILLERO DEL DIABLO SHIRAZ",
+            "image": "https://i.ibb.co/3NtdFv7/casillero-del-diablo-shiraz.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "57.000",
+            "price": 57000
+        },
+        {
+            "id": 11,
+            "name": "CASILLERO DEL DIABLO MALBEC",
+            "image": "https://i.ibb.co/0mf4bwg/malbec.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "79.000",
+            "price": 79000
+        },
+        {
+            "id": 12,
+            "name": "CASILLERO DEL DIABLO RED BLEND",
+            "image": "https://i.ibb.co/qR1jHLn/red-blend.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "79.000",
+            "price": 79000
+        },
+        {
+            "id": 13,
+            "name": "CASILLERO DEL DIABLO RED BLEND",
+            "image": "https://i.ibb.co/qR1jHLn/red-blend.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "79.000",
+            "price": 79000
+        },
+        {
+            "id": 14,
+            "name": "CASILLERO DEL DIABLO MERLOT",
+            "image": "https://i.ibb.co/RcSmpnv/c-MERLOT.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "95.000",
+            "price": 95000
+        },
+        {
+            "id": 16,
+            "name": "CASILLERO DEL DIABLO CARMENERE",
+            "image": "https://i.ibb.co/djvTZJX/CARMENERE.png",
+            "type": "Vino",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "priceString": "69.000",
+            "price": 69000
+        },
+        {
+            "id": 17,
+            "name": "BAVARIA 8.6 EXTREME",
+            "image": "https://i.ibb.co/4WX7js0/extreme.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "type": "berr",
+            "priceString": "8.500",
+            "price": 8500
+        },
+        {
+            "id": 18,
+            "name": "CORONA TROPICAL X 6",
+            "image": "https://i.ibb.co/48X7GmZ/tropical.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "type": "berr",
+            "priceString": "35.000",
+            "price": 35000
+        }
+    ]
 }
-
