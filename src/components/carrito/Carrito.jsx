@@ -7,7 +7,7 @@ export default function Carrito() {
   {
     /********************************** Contexto Global **********************************/
   }
-  const { allProduct, setAllproduct, total,setTotal, data, setData,valorFormateado } =
+  const { allProduct, setAllproduct, total, data, setData,valorFormateado } =
     useGlobalContext();
   const { name, cel, address } = data;
 
@@ -57,9 +57,7 @@ export default function Carrito() {
 
   const deleteData=()=>{
     let arr =[]
-    let valueCart=0;
-    setAllproduct(arr);
-    setTotal(0);
+    setAllproduct(arr)
     console.log('Borrado')
   }
 
