@@ -1,0 +1,27 @@
+{
+    "productBeer":[
+        {
+            "id": 1,
+      "name": "BAVARIA 8.6 EXTREME",
+      "image": "https://i.ibb.co/djvTZJX/CARMENERE.pnghttps://i.ibb.co/4WX7js0/extreme.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "type":"berr",
+      "price": 0
+        },
+        {
+            "id": 1,
+      "name": "BAVARIA 8.6 EXTREME",
+      "image": "https://i.ibb.co/djvTZJX/CARMENERE.pnghttps://i.ibb.co/4WX7js0/extreme.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "type":"berr",
+      "price": 0
+        },{
+            "id": 1,
+      "name": "BAVARIA 8.6 EXTREME",
+      "image": "https://i.ibb.co/djvTZJX/CARMENERE.pnghttps://i.ibb.co/4WX7js0/extreme.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "type":"berr",
+      "price": 0
+        }
+    ]
+}

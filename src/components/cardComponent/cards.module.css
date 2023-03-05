@@ -3,9 +3,14 @@
  flex-wrap: wrap;
  align-items: center;
  justify-content: center;
- padding-top: 4rem;
+ padding-top: 3rem;
+ margin-top: 15px;
 }
-
+.imgCard{
+  width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
 .btn{
     background-color: #0F172A;
     color: white;
@@ -16,7 +21,17 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
+.containerCard{
+  color: black;
+}
+.btnAdd{
+  
+  background: rgb(29,115,0);
+background: linear-gradient(90deg, rgba(29,115,0,0.9164040616246498) 15%, rgba(21,153,37,1) 53%, rgba(8,128,4,0.927608543417367) 93%);
+  color: white;
+  padding: 15px;
+  border-radius: 15px ;
+}
 .containerBtn{
     display: flex;
     justify-content: center;
@@ -26,6 +41,7 @@
     cursor: pointer;
     border-bottom: 1px solid rgba(128, 128, 128, 0.212);
     padding-bottom: 10px;
+   
 }
 
 @keyframes animationBtn {
@@ -48,4 +64,21 @@
     .boton-animado:hover {
       animation: animacion-boton 0.5s;
     
+}
+
+@media only screen and (min-width: 450px){
+  .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .containerCard{
+    height: auto;
+    margin: 25px;
+    padding: 15px;
+  }
+  .containerBtn{
+     height: 532px;
+  }
+
 }

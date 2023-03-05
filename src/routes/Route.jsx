@@ -5,12 +5,18 @@ import BeerPage from '../pages/BeerPage'
 import CarritoPage from '../pages/CarritoPage'
 import { Home } from '../pages/Home'
 import Wines from '../pages/Wines'
+import Carousel from '../components/carousel/Carousel'
 
 export const router =createBrowserRouter([
   
     {
         path:'/',
         element:<Home/>,
+        errorElement:<Notfount/>
+    },
+    {
+        path:'/homePage',
+        element:<Carousel/>,
         errorElement:<Notfount/>
     },
     {
@@ -25,7 +31,7 @@ export const router =createBrowserRouter([
         
     },
     {
-        path:'/beer',
+        path:'beer',
         element:<BeerPage/>,
         errorElement:<Notfount/>
         

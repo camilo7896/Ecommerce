@@ -3,11 +3,13 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Carrito from '../carrito/Carrito'
 import ProductHome from '../../pages/ProductHome'
 import { useGlobalContext } from '../../provider/DataProvider'
+import Styles from './Styles.module.css'
+import { Home } from '../../pages/Home'
 
 export default function Navbar() {
 
     {/********************************** Contexto Global **********************************/}
-  const {valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {valueCero,valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
 
 
@@ -16,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <div className="navbar bg-black text-white pr-6">
+        <div className={Styles.containerNabvar}>
           <div className="flex-1">
             <Link to={'/'} className="btn btn-ghost normal-case text-xl">
               Le vin
@@ -55,10 +57,10 @@ export default function Navbar() {
               >
                 <div className="card-body bg-slate-700 rounded-md">
                   <span className="font-bold text-lg">{allProduct.length} Productos</span>
-                  <span className="text-info">Subtotal: ${total}</span>
+                  <span className="text-info">Subtotal: ${valorFormateado}</span>
                   <div className="card-actions">
                     {/*link router */}
-                    <Link to={'carrito'}>
+                    <Link to={'/carrito'}>
                       <button className="btn btn-success btn-block font-bold">
                         Ir a carrito
                       </button>
@@ -71,8 +73,8 @@ export default function Navbar() {
           </div>
         </div>
         <Routes>
-          <Route path="carrito" element={<Carrito />} />
-          <Route path="/*" element={<ProductHome/>} />
+          <Route path="/carrito" element={<Carrito />} />
+           {/* <Route path="/" element={<ProductHome/>} />   */}
         </Routes>
       </div>
     </>

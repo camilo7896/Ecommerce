@@ -26,8 +26,7 @@ const onAddProduc =product=>{
   setTotal(total + product.price)
    alertProduct()
 }
-let viewbtn = "Ver tipos de vinos"
-let disguiseBtn = "Ocultar"
+
 
 const handleClick = () => {
   setMostrarComponente(!mostrarComponente);
@@ -35,39 +34,34 @@ const handleClick = () => {
 // const formattedAmount = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   {/************************************ Fin Metodos  *****************************************/}
  
-
-
   return (
     <>
     <Search/>
-
-    <div className={Styles.containerBtn}>
-      {/* <button className={Styles.btn} onClick={handleClick}>{mostrarComponente == false?viewbtn:disguiseBtn}</button>
-      {mostrarComponente && <Componente />} */}
-      <TipeWines/>
-    </div>
-  
-    
       <div className={Styles.container}>
         {/* Recorrido de la data */}
         {Productslist.products.map((product) => {
+          
           return (
             <div key={product.id} className={Styles.containerCard}>
-              <div className="card w-72 bg-base-100 shadow-xl m-6 mb-36 justify-center">
-                <figure className="px-10 pt-10">
-                  <img src={product.image} alt="Shoes" className="rounded-xl w-28" />
+              <div className="card w-72  bg-base-100 shadow-xl m-6 mb-36 justify-center">
+                <figure className="px-10 pt-10 w-auto">
+                  <img src={product.image} alt="Shoes" className={Styles.imgCard}/>
                 </figure>
                 <div className="card-body products-center text-center">
                   <div className="justify-products-end">
-                    <span>$ {product.price}</span>
+                    <span>$ {product.priceString}</span>
                   </div>
+                  <div className='h-20 flex justify-center'>
                   <h2 className="card-title">{product.name}</h2>
+                  </div>
+                  {/* <div className='h-90'>
                   <p>{product.description}</p>
+                  </div> */}
                   <div className="flex m-2 products-center justify-center">
                    
                   </div>
                   <div className="card-actions flex justify-center aling-center">
-                    <button className="btn btn-success" onClick={()=> onAddProduc(product, product.price)}>
+                    <button className={Styles.btnAdd} onClick={()=> onAddProduc(product, product.price)}>
                       agregar al carrito
                     </button>
                   </div>

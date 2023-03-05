@@ -7,9 +7,13 @@ export default function Carrito() {
   {
     /********************************** Contexto Global **********************************/
   }
-  const { allProduct, setAllproduct, total, data, setData,valorFormateado } =
+  const { allProduct, setAllproduct, total,setTotal, data, setData,valorFormateado } =
     useGlobalContext();
   const { name, cel, address } = data;
+
+  const clean =(e)=>{
+    console.log('clean', e)
+  }
 
   const handleName = (e) => {
     setData({
@@ -53,7 +57,9 @@ export default function Carrito() {
 
   const deleteData=()=>{
     let arr =[]
-    setAllproduct(arr)
+    let valueCart=0;
+    setAllproduct(arr);
+    setTotal(0);
     console.log('Borrado')
   }
 
@@ -76,7 +82,9 @@ export default function Carrito() {
           )}
          
         </div>
-        <div className="text-center font-bold"><h2>Total: {valorFormateado}</h2></div>
+        <div className="flex justify-center">
+        <div className={Styles.contTotal}>{allProduct.length==" "?" ":<h2>Total: {valorFormateado}</h2>} </div>
+        </div>
         <div className="flex  flex-row justify-center items-center">
         <div className=" ">
           {allProduct == "" ? (
@@ -97,9 +105,10 @@ export default function Carrito() {
         </div>
         {allProduct.map((item) => {
           const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
+          {}
           return (
-            <div>
-              <div className="overflow-x-auto w-full">
+            <div className={Styles.containerTable}>
+              <div className={Styles.tabContainer}>
                 <table key={item.id} className="table w-full">
                   {/* <!-- head --> */}
 
@@ -119,11 +128,14 @@ export default function Carrito() {
                           </div>
                         </div>
                       </td>
+                      <div className="h-14">
                       <td>
                         <p>{item.name}</p>
                       </td>
+                      </div>
+                      <div className="flex justify-end">
                       <td>{valorFormateado}</td>
-                      {/* <td>No.{item.id}</td> */}
+                      </div>
                     </tr>
                   </tbody>
                 </table>
