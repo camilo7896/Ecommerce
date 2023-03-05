@@ -9,7 +9,7 @@ export default function Whatsapp() {
     return (
     <div>
     <a href="https://wa.me/573197108904" target="_blank" rel="noopener noreferrer">
-      <img className='w-12' src={'https://i.ibb.co/TvMZHBY/whatsapp.png'} alt="Contactar por WhatsApp" />
+      <img className='pt-2 w-12 animate-bounce' src={'https://i.ibb.co/TvMZHBY/whatsapp.png'} alt="Contactar por WhatsApp" />
     </a>
     </div>
   )
