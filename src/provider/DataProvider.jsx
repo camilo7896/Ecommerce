@@ -25,7 +25,8 @@ const [total, setTotal]=useState(0)
     address:''
   }]);
   const valorFormateado = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
-  
+
+
 return(
   <GlobalContext.Provider value={{search,setSearch,valorFormateado, data, setData, dataProduct, setDataProduct, allProduct, setAllproduct, count, setCount, total, setTotal, subTotal}}>
   {children}

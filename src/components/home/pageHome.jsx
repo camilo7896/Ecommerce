@@ -18,7 +18,7 @@ export default function pageHome() {
       {/* card del producto Promoción */}
       <div className={Styles.subContainer}>
 
-        <h2 className="font-bold">Centro comercial Parque Solano</h2>
+        <h2 className={Styles.tilteCard}>Centro comercial Parque Solano</h2>
         <div className={Styles.containerProduct}>
           <div className={Styles.containerImg}>
             <img
@@ -28,7 +28,7 @@ export default function pageHome() {
           </div>
           <div className={Styles.containerText}>
           <Icon css={"icon"} icon={faPhone} />{" "}
-            <h2 className="font-semibold">3012051987</h2>
+            <h3 className="font-semibold">3012051987</h3>
             <span></span>
             <small>Duitama-Boyacá</small>
             <Whatsapp/>

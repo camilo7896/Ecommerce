@@ -9,7 +9,7 @@ import { Home } from '../../pages/Home'
 export default function Navbar() {
 
     {/********************************** Contexto Global **********************************/}
-  const {valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
+  const {valueCero,valorFormateado, dataProduct, allProduct,setAllproduct, count, setCount, total, setTotal } = useGlobalContext()
 
 
 
@@ -57,7 +57,7 @@ export default function Navbar() {
               >
                 <div className="card-body bg-slate-700 rounded-md">
                   <span className="font-bold text-lg">{allProduct.length} Productos</span>
-                  <span className="text-info">Subtotal: ${total}</span>
+                  <span className="text-info">Subtotal: ${valorFormateado}</span>
                   <div className="card-actions">
                     {/*link router */}
                     <Link to={'/carrito'}>

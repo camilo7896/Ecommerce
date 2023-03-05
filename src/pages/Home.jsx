@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer'
 import FooterMovile from '../components/footerMovile/FooterMovile'
 import Corousel from '../components/carousel/Carousel'
 import ProductHome from './ProductHome'
+import Hero from '../components/hero/Hero'
 
 
 export function Home() {
@@ -13,6 +14,7 @@ export function Home() {
       <Navbar />
       <Corousel/>
       <ProductHome/>
+      <Hero/>
       <Footer/>
       <FooterMovile/>
     </div>
