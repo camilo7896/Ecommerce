@@ -1,6 +1,6 @@
 import React from 'react'
 import CarouselHero from './CarouselHero'
-import Styles from '/home/cristian/Documentos/Ecommerce/Ecommerce/src/components/hero/hero.module.css'
+import Styles from './hero.module.css'
 
 export default function Hero() {
   return (
