@@ -1,9 +1,0 @@
-.contHero {
-    background: rgb(78, 6, 6);
-    background: radial-gradient(circle, rgba(78, 6, 6, 1) 0%, rgba(0, 0, 0, 1) 59%);
-    color: white;
-    margin: 1rem;
-    margin-bottom: 5em;
-    padding: 1rem;
-    border-radius: 15px;
-}
