@@ -64,11 +64,7 @@ export default function Carrito() {
   return (
     <>
       <div  className={Styles.container}>
-      {/* <div className={Styles.containerTotal}>
-          <div className={Styles.total}>
-            {total == 0 ? "" : <h1>Total = $ {total}</h1>}
-          </div>
-        </div> */}
+    
       
         <div className="flex justify-center p-5 ">
           {allProduct == "" ? (
@@ -81,7 +77,7 @@ export default function Carrito() {
          
         </div>
         <div className="flex justify-center">
-        <div className={Styles.contTotal}>{allProduct.length==" "?" ":<h2>Total: {valorFormateado}</h2>} </div>
+        <div className={Styles.contTotal}>{allProduct.length==" "?<img className="w-52" src={"https://i.ibb.co/ZK2t4GV/car-1.png"} alt=""/>:<h2>Total: {valorFormateado}</h2>} </div>
         </div>
         <div className="flex  flex-row justify-center items-center">
         <div className=" ">
@@ -101,42 +97,17 @@ export default function Carrito() {
         {allProduct==""?"": <button  onClick={deleteData} className="btn btn-outline w-20 m-5 btn-error">Vaciar Carrito</button>}
         </div>
         </div>
+
         {allProduct.map((item) => {
           const valorFormateado = item.price.toLocaleString('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 2 });
           {}
           return (
             <div className={Styles.containerTable}>
               <div className={Styles.tabContainer}>
-                <table key={item.id} className="table w-full">
-                  {/* <!-- head --> */}
 
-                  <tbody>
-                    {/* <!-- row 1 --> */}
-                    <tr>
-                      <td>
-                        <div className="flex items-center space-x-3">
-                          <div className="avatar">
-                            <div className="mask mask-squircle w-12 h-12">
-                              <img
-                                src={item.image}
-                                alt="Avatar Tailwind CSS Component"
-                                className="w-20"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <div className="h-14">
-                      <td>
-                        <p>{item.name}</p>
-                      </td>
-                      </div>
-                      <div className="flex justify-end">
-                      <td>{valorFormateado}</td>
-                      </div>
-                    </tr>
-                  </tbody>
-                </table>
+              <img className="w-36" src={item.image} alt=""/>
+              <small>{item.name}</small>
+              <strong>{valorFormateado}</strong>
               </div>
             </div>
           );
@@ -144,7 +115,6 @@ export default function Carrito() {
       
       </div>
       <hr />
-    
     </>
   );
 }
