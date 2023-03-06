@@ -4,6 +4,8 @@
 Tienda Online dedicada a la venta de Vinos de exelente calidad. 
 En este sitio web el cliente podrar agregar sus productos a un carrito de compras el cual enviara los datos via Whatsapp.
 
+<img src="https://i.ibb.co/x75vFbb/Screenshot-20230306-154426.jpg" alt="Screenshot-20230306-154426" border="0"></a><br /><br />
+
 
 ## Este sitio esta creado con React js.
 
