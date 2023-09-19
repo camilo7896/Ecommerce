@@ -18,19 +18,19 @@ export default function pageHome() {
       {/* card del producto Promoción */}
       <div className={Styles.subContainer}>
 
-        <h2 className="font-bold">Centro comercial Parque Solano</h2>
+        <h2 className="font-bold">Banco Magdalena</h2>
         <div className={Styles.containerProduct}>
           <div className={Styles.containerImg}>
             <img
-              src="https://us.123rf.com/450wm/oleghz/oleghz1702/oleghz170200004/71233942-vino-tinto-en-copas-de-vino-y-botella-de-vino-sobre-un-fondo-negro-silueta-minimalismo-iluminaci%C3%B3n-d.jpg"
+              src="https://i.ibb.co/9pNxJv7/banner-Gorra.jpg"
               alt=" wine"
             />
           </div>
           <div className={Styles.containerText}>
           <Icon css={"icon"} icon={faPhone} />{" "}
-            <h2 className="font-semibold">3012051987</h2>
+            <h2 className="font-semibold">315 6882897</h2>
             <span></span>
-            <small>Duitama-Boyacá</small>
+            <small>Banco Magdalena</small>
             <Whatsapp/>
           </div>
         </div>
@@ -41,7 +41,6 @@ export default function pageHome() {
 
           <Link to={"wine"}>
             <button>
-              <Icon css={"icon"} icon={faWineGlass} />{" "}
               <small>Ver Productos</small>
             </button>
           </Link>

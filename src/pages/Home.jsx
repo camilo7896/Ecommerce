@@ -11,7 +11,7 @@ export function Home() {
     <div>
         
       <Navbar />
-      <Corousel/>
+      <Corousel/> 
       <ProductHome/>
       <Footer/>
       <FooterMovile/>
