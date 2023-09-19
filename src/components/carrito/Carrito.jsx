@@ -36,7 +36,7 @@ export default function Carrito() {
     });
 
     let message =
-      "https://wa.me/573132361040?text=" +
+      "https://wa.me/573156882897?text=" +
       "Orden de " +
       "*" +
       nameProduct.length +

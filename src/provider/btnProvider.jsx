@@ -11,7 +11,7 @@ export default function btnProvider() {
         Swal("Genial!", "Se ha enviado tu producto")
         let nameProduct = allProduct.map((i)=>{return( i.name)});
         
-        let message = "https://wa.me/573132361040?text=" + "Orden de "+  '*'+ nameProduct +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
+        let message = "https://wa.me/573156882897?text=" + "Orden de "+  '*'+ nameProduct +'*'+ " Por total de " + "$" + '*' + parseFloat(total)+'*'; 
         window.location.href= message;
        }
   return (
