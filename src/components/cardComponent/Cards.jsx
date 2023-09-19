@@ -45,7 +45,7 @@ const handleClick = () => {
             <div key={product.id} className={Styles.containerCard}>
               <div className="card w-72  bg-base-100 shadow-xl m-6 mb-36 justify-center">
                 <figure className="px-10 pt-10 w-auto">
-                  <img src={product.image} alt="Shoes" className={Styles.imgCard}/>
+                  <img src={product.image} alt={product.name} className={Styles.imgCard}/>
                 </figure>
                 <div className="card-body products-center text-center">
                   <div className="justify-products-end">
