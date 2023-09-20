@@ -33,6 +33,7 @@ export default function Carrito() {
     Swal("Genial!", "Se ha enviado tu producto");
     let nameProduct = allProduct.map((i) => {
       return i.name;
+      
     });
 
     let message =

@@ -20,7 +20,7 @@ export const router =createBrowserRouter([
         errorElement:<Notfount/>
     },
     {
-        path:'/wine',
+        path:'/gorras',
         element:<Wines/>,
         errorElement:<Notfount/>
     },

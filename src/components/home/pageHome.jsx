@@ -39,7 +39,7 @@ export default function pageHome() {
       <div className={Styles.containerBtns}>
         <div className={Styles.btnCategories}>
 
-          <Link to={"wine"}>
+          <Link to={"gorras"}>
             <button>
               <small>Ver Productos</small>
             </button>
